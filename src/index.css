@@ -1,0 +1,127 @@
+/* Обнуляющий стиль */
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+li {
+	list-style: none;
+}
+a {
+	color: inherit;
+}
+a,
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+img {
+	vertical-align: top;
+}
+
+body,
+html {
+	height: 100%;
+	line-height: 1;
+}
+
+/* ================================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+
+body {
+	background-image: url('background.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.main-container {
+	max-width: 700px;
+	margin-left: 50px;
+}
+h2 {
+	margin-top: 40px;
+	margin-bottom: 40px;
+	font-size: 30px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.btn {
+	font-family: 'Ubuntu', sans-serif;
+	width: 130px;
+	padding: 10px;
+	margin-bottom: 10px;
+	font-size: 20px;
+	cursor: pointer;
+	border-radius: 5px;
+	background-color: #7B68EE;
+	color: white
+	
+}
+.search {
+	font-family: 'Ubuntu', sans-serif;
+	display: block;
+	width: 700px;
+	border: none;
+	color: white;
+	font-size: 20px;
+	background: #232324;
+	padding: 15px;
+	margin-bottom: 20px;
+	border-radius: 5px;
+}
+
+.grey-box {
+	display: flex;
+	background-color: #d8d8dfb5;
+	max-width: 700px;
+	padding: 10px;
+	flex-direction: column;
+	border-radius: 5px;
+}
+.white-box {
+	background-color: white;
+	width:100%;
+	display: flex;
+	justify-content: space-between;
+	height: 40px;
+	border-radius: 5px;
+}
+.white-box:not(:last-child) {
+	margin-bottom: 10px;
+}
+
+.input-task {
+	display: flex;
+	align-items: center;
+	margin-left: 10px;
+	font-size: 18px;
+}
+.icons {
+	display: flex;
+	align-items: center;
+
+}
+.delete-icon, .edit-icon {
+	background-color:#d8d8dfb5;
+	padding: 5px;
+	padding-left: 7px;
+	padding-right: 7px;
+	margin-right: 10px;
+	cursor: pointer;
+	border-radius: 5px;
+}
